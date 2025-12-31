@@ -280,24 +280,6 @@
                         </ul>
                     </div>
 
-                    <!-- How It Works Section (New) -->
-                    <div class="bg-blue-50 rounded-xl p-6 mb-8 border border-blue-100">
-                        <h2 class="text-lg font-bold text-gray-900 mb-3 uppercase tracking-wide" data-i18n="how_works_title">HOW OZALYN WORKS</h2>
-                        <h3 class="text-sm font-semibold text-gray-500 uppercase mb-3" data-i18n="how_works_subtitle">Quick Overview</h3>
-                        <p class="text-gray-700 mb-4 font-medium" data-i18n="how_works_desc">
-                            Ozalyn is designed to work with your body, not against it. It supports:
-                        </p>
-                        <div class="grid grid-cols-2 gap-3 mb-4">
-                            <div class="bg-white p-3 rounded shadow-sm text-center font-semibold text-gray-800 text-sm">Gut microbiome balance</div>
-                            <div class="bg-white p-3 rounded shadow-sm text-center font-semibold text-gray-800 text-sm">Nutrient absorption</div>
-                            <div class="bg-white p-3 rounded shadow-sm text-center font-semibold text-gray-800 text-sm">Digestive efficiency</div>
-                            <div class="bg-white p-3 rounded shadow-sm text-center font-semibold text-gray-800 text-sm">Metabolic harmony</div>
-                        </div>
-                        <p class="text-gray-700 text-sm leading-relaxed" data-i18n="how_works_footer">
-                            By improving the foundation of digestion, Ozalyn helps your body function more efficiently — which may support weight management and overall vitality over time.
-                        </p>
-                    </div>
-
                     <!-- CTA SECTION -->
                     <div class="w-full mb-8">
                         <button onclick="document.getElementById('country-selection').scrollIntoView({ behavior: 'smooth' })" class="w-full bg-[#2e2e2e] hover:bg-black text-white font-black text-xl md:text-2xl py-4 rounded-lg shadow-lg hover:shadow-xl transform transition hover:-translate-y-0.5 uppercase tracking-wide mb-4">
@@ -351,113 +333,138 @@
                     Get the lowest price available in your region, local currency, and the fastest shipping options.<br>
                     Click on your flag to see your exclusive deal.
                 </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <!-- Alterado para grid-cols-2 no mobile -->
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
                     
-                    <!-- Sweden (SE) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6ZKD3SJ/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Sweden">
-                        <img src="https://flagcdn.com/w80/se.png" alt="Sweden Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Sweden</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Sweden (SE) - Medium Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6ZKD3SJ/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Sweden">
+                        <img src="https://flagcdn.com/w80/se.png" alt="Sweden Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Sweden</span>
+                            <span class="text-[10px] md:text-xs font-bold text-orange-500 uppercase flex items-center justify-center md:justify-start gap-1">
+                                <i class="fas fa-circle text-[6px]"></i> Medium Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Netherlands (NL - Holanda) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6XZPH18/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Netherlands">
-                        <img src="https://flagcdn.com/w80/nl.png" alt="Netherlands Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Netherlands</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Netherlands (NL) - High Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6XZPH18/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Netherlands">
+                        <img src="https://flagcdn.com/w80/nl.png" alt="Netherlands Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Netherlands</span>
+                            <span class="text-[10px] md:text-xs font-bold text-green-600 uppercase flex items-center justify-center md:justify-start gap-1">
+                                <i class="fas fa-circle text-[6px]"></i> High Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- United Kingdom (UK) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6ZQXLQZ/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in United Kingdom">
-                        <img src="https://flagcdn.com/w80/gb.png" alt="United Kingdom Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">United Kingdom</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- United Kingdom (UK) - Low Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6ZQXLQZ/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in United Kingdom">
+                        <img src="https://flagcdn.com/w80/gb.png" alt="United Kingdom Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">United Kingdom</span>
+                            <span class="text-[10px] md:text-xs font-bold text-red-600 uppercase flex items-center justify-center md:justify-start gap-1 animate-pulse">
+                                <i class="fas fa-circle text-[6px]"></i> Low Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- France (FR) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6XD2W5Z/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in France">
-                        <img src="https://flagcdn.com/w80/fr.png" alt="France Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">France</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- France (FR) - Low Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6XD2W5Z/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in France">
+                        <img src="https://flagcdn.com/w80/fr.png" alt="France Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">France</span>
+                            <span class="text-[10px] md:text-xs font-bold text-red-600 uppercase flex items-center justify-center md:justify-start gap-1 animate-pulse">
+                                <i class="fas fa-circle text-[6px]"></i> Low Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Germany (DE) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6WM7M4T/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Germany">
-                        <img src="https://flagcdn.com/w80/de.png" alt="Germany Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Germany</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Germany (DE) - Medium Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6WM7M4T/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Germany">
+                        <img src="https://flagcdn.com/w80/de.png" alt="Germany Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Germany</span>
+                            <span class="text-[10px] md:text-xs font-bold text-orange-500 uppercase flex items-center justify-center md:justify-start gap-1">
+                                <i class="fas fa-circle text-[6px]"></i> Medium Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Austria (AT) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6WM7M4T/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Austria">
-                        <img src="https://flagcdn.com/w80/at.png" alt="Austria Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Austria</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Austria (AT) - High Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6WM7M4T/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Austria">
+                        <img src="https://flagcdn.com/w80/at.png" alt="Austria Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Austria</span>
+                            <span class="text-[10px] md:text-xs font-bold text-green-600 uppercase flex items-center justify-center md:justify-start gap-1">
+                                <i class="fas fa-circle text-[6px]"></i> High Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Poland (PL) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6Z7MWN9/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Poland">
-                        <img src="https://flagcdn.com/w80/pl.png" alt="Poland Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Poland</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Poland (PL) - Medium Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6Z7MWN9/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Poland">
+                        <img src="https://flagcdn.com/w80/pl.png" alt="Poland Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Poland</span>
+                            <span class="text-[10px] md:text-xs font-bold text-orange-500 uppercase flex items-center justify-center md:justify-start gap-1">
+                                <i class="fas fa-circle text-[6px]"></i> Medium Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Italy (IT) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6XSJSRF/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Italy">
-                        <img src="https://flagcdn.com/w80/it.png" alt="Italy Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Italy</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Italy (IT) - Low Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6XSJSRF/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Italy">
+                        <img src="https://flagcdn.com/w80/it.png" alt="Italy Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Italy</span>
+                            <span class="text-[10px] md:text-xs font-bold text-red-600 uppercase flex items-center justify-center md:justify-start gap-1 animate-pulse">
+                                <i class="fas fa-circle text-[6px]"></i> Low Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Ireland (IE) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6XM19T1/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Ireland">
-                        <img src="https://flagcdn.com/w80/ie.png" alt="Ireland Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Ireland</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Ireland (IE) - High Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6XM19T1/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Ireland">
+                        <img src="https://flagcdn.com/w80/ie.png" alt="Ireland Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Ireland</span>
+                            <span class="text-[10px] md:text-xs font-bold text-green-600 uppercase flex items-center justify-center md:justify-start gap-1">
+                                <i class="fas fa-circle text-[6px]"></i> High Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Finland (FI) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6X7W7Z5/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Finland">
-                        <img src="https://flagcdn.com/w80/fi.png" alt="Finland Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Finland</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Finland (FI) - Medium Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6X7W7Z5/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Finland">
+                        <img src="https://flagcdn.com/w80/fi.png" alt="Finland Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Finland</span>
+                            <span class="text-[10px] md:text-xs font-bold text-orange-500 uppercase flex items-center justify-center md:justify-start gap-1">
+                                <i class="fas fa-circle text-[6px]"></i> Medium Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Spain (ES) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6X2BP1P/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Spain">
-                        <img src="https://flagcdn.com/w80/es.png" alt="Spain Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Spain</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Spain (ES) - Low Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6X2BP1P/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Spain">
+                        <img src="https://flagcdn.com/w80/es.png" alt="Spain Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Spain</span>
+                            <span class="text-[10px] md:text-xs font-bold text-red-600 uppercase flex items-center justify-center md:justify-start gap-1 animate-pulse">
+                                <i class="fas fa-circle text-[6px]"></i> Low Stock
+                            </span>
                         </div>
                     </a>
 
-                    <!-- Denmark (DK) -->
-                    <a href="https://www.clickrtrckr.com/2LXFFTP/6WSR639/" class="group bg-white p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex items-center gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Denmark">
-                        <img src="https://flagcdn.com/w80/dk.png" alt="Denmark Flag" class="w-12 h-auto rounded shadow-sm object-cover">
-                        <div class="text-left">
-                            <span class="block font-bold text-slate-900 text-lg group-hover:text-blue-600 transition-colors">Denmark</span>
-                            <span class="text-xs text-slate-500 font-medium">Exclusive Deal Available</span>
+                    <!-- Denmark (DK) - High Stock -->
+                    <a href="https://www.clickrtrckr.com/2LXFFTP/6WSR639/" class="group bg-white p-3 md:p-5 rounded-2xl border border-gray-200 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] hover:border-blue-500/30 transition-all duration-300 flex flex-col md:flex-row items-center text-center md:text-left gap-2 md:gap-4 no-underline hover:-translate-y-1" aria-label="Shop Ozalyn in Denmark">
+                        <img src="https://flagcdn.com/w80/dk.png" alt="Denmark Flag" class="w-10 md:w-12 h-auto rounded shadow-sm object-cover">
+                        <div class="flex flex-col">
+                            <span class="block font-bold text-slate-900 text-sm md:text-lg group-hover:text-blue-600 transition-colors">Denmark</span>
+                            <span class="text-[10px] md:text-xs font-bold text-green-600 uppercase flex items-center justify-center md:justify-start gap-1">
+                                <i class="fas fa-circle text-[6px]"></i> High Stock
+                            </span>
                         </div>
                     </a>
 
