@@ -203,10 +203,11 @@
         </div>
 
         <!-- Navbar -->
-        <header class="bg-[#6F7B9F] px-4 py-3 sticky top-0 z-50 shadow-sm w-full">
+        <header class="bg-[#6F7B9F] px-4 py-2 sticky top-0 z-50 shadow-sm w-full">
             <div class="container mx-auto flex justify-center md:justify-between items-center">
                 <div class="flex items-center">
-                    <img src="images/ozalyn-logo.png" alt="Ozalyn Official Logo" class="h-8 md:h-10 w-auto">
+                    <!-- LOGO DIMINUÍDO E CABEÇALHO MAIS ESTREITO -->
+                    <img src="images/ozalyn-logo.png" alt="Ozalyn Official Logo" class="h-6 md:h-8 w-auto">
                 </div>
             </div>
         </header>
@@ -577,10 +578,8 @@
     </div>
 
     <script>
-        // Note: For this rebrand, all language keys are set to the English content 
-        // to prevent old Wuffy (dog) text from appearing if a user switches languages.
-        // You will need to translate these texts later for full localization.
         const translations = {
+            // English (UK, IE, US, Default)
             en: {
                 top_bar: "HIGH DEMAND — LIMITED AVAILABILITY",
                 sub_header_1: "SCIENCE-BACKED FORMULA",
@@ -596,10 +595,8 @@
                 bullet_4: "Supports natural energy — without stimulants",
                 bullet_5: "Formulated with research-backed probiotic strains",
                 bullet_6: "Manufactured in certified facilities",
-                how_works_title: "HOW OZALYN WORKS",
-                how_works_subtitle: "Quick Overview",
-                how_works_desc: "Ozalyn is designed to work with your body, not against it. It supports:",
-                how_works_footer: "By improving the foundation of digestion, Ozalyn helps your body function more efficiently — which may support weight management and overall vitality over time.",
+                cta_button: "CHECK AVAILABILITY",
+                cta_guarantee: "High demand — limited availability",
                 social_proof: "Join 2,000+ Verified Customers",
                 stock: "In stock",
                 limited_deal: "Secure Your Supply Today",
@@ -608,33 +605,261 @@
                 footer_care_title: "CUSTOMER CARE",
                 footer_email: "support@ozalyn.com",
                 footer_chat: "24/7 Live Chat",
-                cta_button: "CHECK AVAILABILITY",
-                cta_guarantee: "High demand — limited availability",
                 footer_text: "Ozalyn provides high-quality, science-based nutritional support for metabolic balance and digestive health. We believe in transparency, quality ingredients, and real results without shortcuts."
             },
-            // Fallback for other languages to English for now
+            // German (DE, AT)
             de: {
                 top_bar: "HOHE NACHFRAGE — BEGRENZTE VERFÜGBARKEIT",
                 sub_header_1: "WISSENSCHAFTLICH FUNDIERTE FORMEL",
-                // ...keeping these minimal or mapping to EN to avoid 'Robot Dog' text
-                main_title: "Ozalyn™ — Ein intelligenter Weg zur Unterstützung des Stoffwechsels",
-                subtitle: "Entdecken Sie einen wissenschaftlich fundierten Ansatz zur Unterstützung der Verdauung und des Stoffwechselgleichgewichts.",
+                sub_header_2: "SCHNELLER & KOSTENLOSER VERSAND",
+                sub_header_3: "30 TAGE GELD-ZURÜCK-GARANTIE",
+                ratings: "2.000+ Verifizierte Kunden",
+                main_title: "Ozalyn™ — Ein intelligenter Weg zur Unterstützung von Stoffwechsel und Verdauung",
+                subtitle: "Entdecken Sie einen wissenschaftlich fundierten Ansatz zur Unterstützung der Verdauung, des Stoffwechselgleichgewichts und des allgemeinen Wohlbefindens — ohne harte Stimulanzien, extreme Diäten oder komplizierte Routinen.",
                 why_love: "Warum Menschen Ozalyn wählen",
-                bullet_1: "Unterstützt eine gesunde Verdauung",
+                bullet_1: "Unterstützt eine gesunde Verdauung und das Darmgleichgewicht",
                 bullet_2: "Hilft bei der Aufrechterhaltung der Stoffwechseleffizienz",
-                cta_button: "VERFÜGBARKEIT PRÜFEN"
+                bullet_3: "Fördert tägliches Wohlbefinden und reduziert Blähungen",
+                bullet_4: "Unterstützt natürliche Energie — ohne Stimulanzien",
+                bullet_5: "Formuliert mit forschungsgestützten probiotischen Stämmen",
+                bullet_6: "Hergestellt in zertifizierten Anlagen",
+                cta_button: "VERFÜGBARKEIT PRÜFEN",
+                cta_guarantee: "Hohe Nachfrage — begrenzte Verfügbarkeit",
+                social_proof: "Schließen Sie sich 2.000+ verifizierten Kunden an",
+                stock: "Auf Lager",
+                limited_deal: "Sichern Sie sich noch heute Ihren Vorrat",
+                select_title: "Wählen Sie Ihr Land für das beste Ozalyn-Angebot",
+                select_subtitle: "Erhalten Sie den niedrigsten Preis in Ihrer Region, Landeswährung und schnellsten Versandoptionen.<br>Klicken Sie auf Ihre Flagge, um Ihren exklusiven Deal zu sehen.",
+                footer_care_title: "KUNDENSERVICE",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "24/7 Live-Chat",
+                footer_text: "Ozalyn bietet hochwertige, wissenschaftlich fundierte Ernährungsunterstützung für Stoffwechselgleichgewicht und Verdauungsgesundheit. Wir glauben an Transparenz, hochwertige Inhaltsstoffe und echte Ergebnisse ohne Abkürzungen."
             },
-            nl: {}, sv: {}, da: {}, no: {}, fi: {}
+            // French (FR)
+            fr: {
+                top_bar: "FORTE DEMANDE — STOCK LIMITÉ",
+                sub_header_1: "FORMULE SCIENTIFIQUE",
+                sub_header_2: "LIVRAISON RAPIDE & GRATUITE",
+                sub_header_3: "GARANTIE SATISFAIT OU REMBOURSÉ DE 30 JOURS",
+                ratings: "2 000+ Clients Vérifiés",
+                main_title: "Ozalyn™ — Une façon plus intelligente de soutenir l'équilibre métabolique",
+                subtitle: "Découvrez une approche scientifique pour soutenir la digestion, l'équilibre métabolique et le bien-être général — sans stimulants agressifs, régimes extrêmes ou routines compliquées.",
+                why_love: "Pourquoi choisir Ozalyn",
+                bullet_1: "Soutient une digestion saine et l'équilibre intestinal",
+                bullet_2: "Aide à maintenir l'efficacité métabolique",
+                bullet_3: "Favorise le confort quotidien et réduit les ballonnements",
+                bullet_4: "Soutient l'énergie naturelle — sans stimulants",
+                bullet_5: "Formulé avec des souches probiotiques étudiées",
+                bullet_6: "Fabriqué dans des installations certifiées",
+                cta_button: "VÉRIFIER LA DISPONIBILITÉ",
+                cta_guarantee: "Forte demande — disponibilité limitée",
+                social_proof: "Rejoignez plus de 2 000 clients vérifiés",
+                stock: "En stock",
+                limited_deal: "Sécurisez votre commande aujourd'hui",
+                select_title: "Sélectionnez votre pays pour la meilleure offre Ozalyn",
+                select_subtitle: "Obtenez le prix le plus bas disponible dans votre région, la devise locale et les options d'expédition les plus rapides.<br>Cliquez sur votre drapeau pour voir votre offre exclusive.",
+                footer_care_title: "SERVICE CLIENT",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "Chat en direct 24/7",
+                footer_text: "Ozalyn fournit un soutien nutritionnel de haute qualité, basé sur la science, pour l'équilibre métabolique et la santé digestive. Nous croyons en la transparence, des ingrédients de qualité et de vrais résultats."
+            },
+            // Spanish (ES)
+            es: {
+                top_bar: "ALTA DEMANDA — DISPONIBILIDAD LIMITADA",
+                sub_header_1: "FÓRMULA RESPALDADA POR LA CIENCIA",
+                sub_header_2: "ENVÍO RÁPIDO Y GRATUITO",
+                sub_header_3: "GARANTÍA DE DEVOLUCIÓN DE 30 DÍAS",
+                ratings: "2,000+ Clientes Verificados",
+                main_title: "Ozalyn™ — Una forma inteligente de apoyar el equilibrio metabólico",
+                subtitle: "Descubra un enfoque respaldado por la ciencia para apoyar la digestión, el equilibrio metabólico y el bienestar general, sin estimulantes fuertes ni dietas extremas.",
+                why_love: "Por qué la gente elige Ozalyn",
+                bullet_1: "Apoya una digestión saludable y el equilibrio intestinal",
+                bullet_2: "Ayuda a mantener la eficiencia metabólica",
+                bullet_3: "Promueve el confort diario y reduce la hinchazón",
+                bullet_4: "Apoya la energía natural — sin estimulantes",
+                bullet_5: "Formulado con cepas probióticas respaldadas por investigaciones",
+                bullet_6: "Fabricado en instalaciones certificadas",
+                cta_button: "VERIFICAR DISPONIBILIDAD",
+                cta_guarantee: "Alta demanda — disponibilidad limitada",
+                social_proof: "Únase a más de 2,000 clientes verificados",
+                stock: "En stock",
+                limited_deal: "Asegure su suministro hoy",
+                select_title: "Seleccione su país para desbloquear la mejor oferta",
+                select_subtitle: "Obtenga el precio más bajo disponible en su región, moneda local y opciones de envío más rápidas.<br>Haga clic en su bandera para ver su oferta exclusiva.",
+                footer_care_title: "ATENCIÓN AL CLIENTE",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "Chat en vivo 24/7",
+                footer_text: "Ozalyn proporciona soporte nutricional de alta calidad basado en la ciencia para el equilibrio metabólico y la salud digestiva. Creemos en la transparencia y los resultados reales."
+            },
+            // Italian (IT)
+            it: {
+                top_bar: "ALTA RICHIESTA — DISPONIBILITÀ LIMITATA",
+                sub_header_1: "FORMULA SUPPORTATA DALLA SCIENZA",
+                sub_header_2: "SPEDIZIONE VELOCE E GRATUITA",
+                sub_header_3: "GARANZIA DI RIMBORSO DI 30 GIORNI",
+                ratings: "2.000+ Clienti Verificati",
+                main_title: "Ozalyn™ — Un modo più intelligente per supportare l'equilibrio metabolico",
+                subtitle: "Scopri un approccio scientifico per supportare la digestione, l'equilibrio metabolico e il benessere generale — senza stimolanti aggressivi o diete estreme.",
+                why_love: "Perché le persone scelgono Ozalyn",
+                bullet_1: "Supporta una sana digestione e l'equilibrio intestinale",
+                bullet_2: "Aiuta a mantenere l'efficienza metabolica",
+                bullet_3: "Promuove il comfort quotidiano e riduce il gonfiore",
+                bullet_4: "Supporta l'energia naturale — senza stimolanti",
+                bullet_5: "Formulato con ceppi probiotici supportati dalla ricerca",
+                bullet_6: "Prodotto in strutture certificate",
+                cta_button: "VERIFICA DISPONIBILITÀ",
+                cta_guarantee: "Alta richiesta — disponibilità limitata",
+                social_proof: "Unisciti a oltre 2.000 clienti verificati",
+                stock: "Disponibile",
+                limited_deal: "Assicura la tua fornitura oggi",
+                select_title: "Seleziona il tuo paese per la migliore offerta Ozalyn",
+                select_subtitle: "Ottieni il prezzo più basso disponibile nella tua regione, valuta locale e spedizione veloce.<br>Clicca sulla tua bandiera per vedere l'offerta esclusiva.",
+                footer_care_title: "SERVIZIO CLIENTI",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "Chat dal vivo 24/7",
+                footer_text: "Ozalyn fornisce supporto nutrizionale di alta qualità per l'equilibrio metabolico e la salute digestiva. Crediamo nella trasparenza e nei risultati reali."
+            },
+            // Dutch (NL)
+            nl: {
+                top_bar: "GROTE VRAAG — BEPERKTE BESCHIKBAARHEID",
+                sub_header_1: "WETENSCHAPPELIJKE FORMULE",
+                sub_header_2: "SNELLE & GRATIS VERZENDING",
+                sub_header_3: "30 DAGEN GELD-TERUG-GARANTIE",
+                ratings: "2.000+ Geverifieerde Klanten",
+                main_title: "Ozalyn™ — Een slimmere manier om metabolische balans te ondersteunen",
+                subtitle: "Ontdek een wetenschappelijk onderbouwde aanpak voor spijsvertering, metabolische balans en algemeen welzijn — zonder agressieve stimulerende middelen.",
+                why_love: "Waarom mensen voor Ozalyn kiezen",
+                bullet_1: "Ondersteunt een gezonde spijsvertering en darmbalans",
+                bullet_2: "Helpt metabolische efficiëntie te behouden",
+                bullet_3: "Bevordert dagelijks comfort en vermindert een opgeblazen gevoel",
+                bullet_4: "Ondersteunt natuurlijke energie — zonder stimulerende middelen",
+                bullet_5: "Geformuleerd met onderzochte probiotische stammen",
+                bullet_6: "Geproduceerd in gecertificeerde faciliteiten",
+                cta_button: "CONTROLEER BESCHIKBAARHEID",
+                cta_guarantee: "Grote vraag — beperkte beschikbaarheid",
+                social_proof: "Sluit je aan bij 2.000+ geverifieerde klanten",
+                stock: "Op voorraad",
+                limited_deal: "Verzeker uw voorraad vandaag",
+                select_title: "Selecteer uw land voor de beste aanbieding",
+                select_subtitle: "Krijg de laagste prijs in uw regio, lokale valuta en snelste verzendopties.<br>Klik op uw vlag om uw exclusieve deal te bekijken.",
+                footer_care_title: "KLANTENSERVICE",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "24/7 Live Chat",
+                footer_text: "Ozalyn biedt hoogwaardige, wetenschappelijk onderbouwde voedingsondersteuning. Wij geloven in transparantie, kwaliteitsingrediënten en echte resultaten."
+            },
+            // Swedish (SE)
+            sv: {
+                top_bar: "HÖG EFTERFRÅGAN — BEGRÄNSAD TILLGÅNG",
+                sub_header_1: "VETENSKAPLIGT STÖDD FORMEL",
+                sub_header_2: "SNABB & GRATIS FRAKT",
+                sub_header_3: "30 DAGARS PENGARNA-TILLBAKA-GARANTI",
+                ratings: "2 000+ Verifierade Kunder",
+                main_title: "Ozalyn™ — Ett smartare sätt att stödja metabolisk balans",
+                subtitle: "Upptäck ett vetenskapligt baserat tillvägagångssätt för matsmältning, metabolisk balans och välbefinnande — utan starka stimulantia.",
+                why_love: "Varför folk väljer Ozalyn",
+                bullet_1: "Stödjer hälsosam matsmältning och tarmbalans",
+                bullet_2: "Hjälper till att upprätthålla metabolisk effektivitet",
+                bullet_3: "Främjar daglig komfort och minskar uppblåsthet",
+                bullet_4: "Stödjer naturlig energi — utan stimulantia",
+                bullet_5: "Formulerad med forskningsstödda probiotiska stammar",
+                bullet_6: "Tillverkad i certifierade anläggningar",
+                cta_button: "KONTROLLERA TILLGÄNGLIGHET",
+                cta_guarantee: "Hög efterfrågan — begränsad tillgång",
+                social_proof: "Gå med över 2 000 verifierade kunder",
+                stock: "I lager",
+                limited_deal: "Säkra din leverans idag",
+                select_title: "Välj ditt land för bästa erbjudande",
+                select_subtitle: "Få det lägsta priset i din region, lokal valuta och snabbaste frakt.<br>Klicka på din flagga för att se ditt exklusiva erbjudande.",
+                footer_care_title: "KUNDTJÄNST",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "24/7 Livechatt",
+                footer_text: "Ozalyn erbjuder högkvalitativt, vetenskapligt baserat näringsstöd. Vi tror på transparens, kvalitetsingredienser och verkliga resultat."
+            },
+            // Danish (DK)
+            da: {
+                top_bar: "HØJ EFTERSPØRGSEL — BEGRÆNSET ANTAL",
+                sub_header_1: "VIDENSKABELIGT BASERET FORMEL",
+                sub_header_2: "HURTIG & GRATIS FRAGT",
+                sub_header_3: "30 DAGES TILFREDSHEDSGARANTI",
+                ratings: "2.000+ Verificerede Kunder",
+                main_title: "Ozalyn™ — En smartere måde at støtte metabolisk balance",
+                subtitle: "Opdag en videnskabelig tilgang til at støtte fordøjelse, metabolisk balance og generelt velvære — uden skrappe stimulanser.",
+                why_love: "Hvorfor folk vælger Ozalyn",
+                bullet_1: "Støtter sund fordøjelse og tarmbalance",
+                bullet_2: "Hjælper med at opretholde metabolisk effektivitet",
+                bullet_3: "Fremmer daglig komfort og reducerer oppustethed",
+                bullet_4: "Støtter naturlig energi — uden stimulanser",
+                bullet_5: "Formuleret med forskningsbaserede probiotiske stammer",
+                bullet_6: "Fremstillet i certificerede faciliteter",
+                cta_button: "TJEK TILGÆNGELIGHED",
+                cta_guarantee: "Høj efterspørgsel — begrænset antal",
+                social_proof: "Slut dig til 2.000+ verificerede kunder",
+                stock: "På lager",
+                limited_deal: "Sikr din levering i dag",
+                select_title: "Vælg dit land for det bedste tilbud",
+                select_subtitle: "Få den laveste pris i din region, lokal valuta og hurtigste fragt.<br>Klik på dit flag for at se din eksklusive aftale.",
+                footer_care_title: "KUNDESERVICE",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "24/7 Live Chat",
+                footer_text: "Ozalyn leverer ernæringsmæssig støtte af høj kvalitet. Vi tror på gennemsigtighed, kvalitetsingredienser og virkelige resultater."
+            },
+            // Finnish (FI)
+            fi: {
+                top_bar: "SUURI KYSYNTÄ — RAJOITETTU SAATAVUUS",
+                sub_header_1: "TIETEESEEN PERUSTUVA KAAVA",
+                sub_header_2: "NOPEA JA ILMAINEN TOIMITUS",
+                sub_header_3: "30 PÄIVÄN RAHAT TAKAISIN -TAKUU",
+                ratings: "2 000+ Vahvistettua Asiakasta",
+                main_title: "Ozalyn™ — Älykkäämpi tapa tukea aineenvaihduntaa",
+                subtitle: "Löydä tieteeseen perustuva tapa tukea ruoansulatusta, aineenvaihdunnan tasapainoa ja yleistä hyvinvointia — ilman kovia piristeitä.",
+                why_love: "Miksi ihmiset valitsevat Ozalynin",
+                bullet_1: "Tukee terveellistä ruoansulatusta ja suoliston tasapainoa",
+                bullet_2: "Auttaa ylläpitämään aineenvaihdunnan tehokkuutta",
+                bullet_3: "Edistää päivittäistä mukavuutta ja vähentää turvotusta",
+                bullet_4: "Tukee luonnollista energiaa — ilman piristeitä",
+                bullet_5: "Valmistettu tutkimusnäyttöön perustuvilla probioottikannoilla",
+                bullet_6: "Valmistettu sertifioiduissa laitoksissa",
+                cta_button: "TARKISTA SAATAVUUS",
+                cta_guarantee: "Suuri kysyntä — rajoitettu saatavuus",
+                social_proof: "Liity yli 2 000 tyytyväiseen asiakkaaseen",
+                stock: "Varastossa",
+                limited_deal: "Varmista tilauksesi tänään",
+                select_title: "Valitse maasi parhaan tarjouksen saamiseksi",
+                select_subtitle: "Saat halvimman hinnan alueellasi, paikallisen valuutan ja nopeimmat toimitukset.<br>Napsauta lippua nähdäksesi tarjouksesi.",
+                footer_care_title: "ASIAKASPALVELU",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "24/7 Live Chat",
+                footer_text: "Ozalyn tarjoaa korkealaatuista, tieteeseen perustuvaa ravitsemuksellista tukea. Uskomme läpinäkyvyyteen ja todellisiin tuloksiin."
+            },
+            // Polish (PL)
+            pl: {
+                top_bar: "DUŻE ZAINTERESOWANIE — OGRANICZONA DOSTĘPNOŚĆ",
+                sub_header_1: "FORMUŁA OPARTA NA NAUCE",
+                sub_header_2: "SZYBKA I DARMOWA WYSYŁKA",
+                sub_header_3: "GWARANCJA ZWROTU PIENIĘDZY 30 DNI",
+                ratings: "2,000+ Zweryfikowanych Klientów",
+                main_title: "Ozalyn™ — Mądrzejszy sposób na wsparcie metabolizmu",
+                subtitle: "Odkryj oparte na nauce podejście do wspierania trawienia, równowagi metabolicznej i ogólnego samopoczucia — bez silnych stymulantów.",
+                why_love: "Dlaczego ludzie wybierają Ozalyn",
+                bullet_1: "Wspiera zdrowe trawienie i równowagę jelitową",
+                bullet_2: "Pomaga utrzymać wydajność metaboliczną",
+                bullet_3: "Promuje codzienny komfort i zmniejsza wzdęcia",
+                bullet_4: "Wspiera naturalną energię — bez stymulantów",
+                bullet_5: "Opracowany ze szczepami probiotycznymi popartymi badaniami",
+                bullet_6: "Wyprodukowano w certyfikowanych zakładach",
+                cta_button: "SPRAWDŹ DOSTĘPNOŚĆ",
+                cta_guarantee: "Duże zapotrzebowanie — ograniczona dostępność",
+                social_proof: "Dołącz do 2,000+ zweryfikowanych klientów",
+                stock: "W magazynie",
+                limited_deal: "Zabezpiecz swoje zamówienie dzisiaj",
+                select_title: "Wybierz swój kraj, aby odblokować ofertę",
+                select_subtitle: "Uzyskaj najniższą cenę dostępną w Twoim regionie, lokalną walutę i najszybsze opcje wysyłki.<br>Kliknij swoją flagę, aby zobaczyć ofertę.",
+                footer_care_title: "OBSŁUGA KLIENTA",
+                footer_email: "support@ozalyn.com",
+                footer_chat: "Czat na żywo 24/7",
+                footer_text: "Ozalyn zapewnia wysokiej jakości wsparcie żywieniowe oparte na nauce dla równowagi metabolicznej. Wierzymy w przejrzystość i rzeczywiste wyniki."
+            }
         };
-
-        // Populate other languages with English defaults to be safe
-        ['nl', 'sv', 'da', 'no', 'fi'].forEach(lang => {
-            translations[lang] = translations['en'];
-        });
-        
-        // Merge DE back in if needed, or just overwrite all with EN for safety
-        translations['de'] = translations['en'];
-
 
         function setLanguage(lang, countryCode) {
             const elements = document.querySelectorAll('[data-i18n]');
@@ -644,11 +869,7 @@
                     el.innerHTML = translations[lang][key];
                 }
             });
-
-            const regionFlag = document.getElementById('dynamic-region-flag');
-            if (regionFlag) {
-                regionFlag.src = `https://flagcdn.com/w20/${countryCode}.png`;
-            }
+            // If flags were present, we would update them here.
         }
 
         // Custom Toast Notification instead of alert
