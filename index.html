@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <!-- TRACKING SCRIPTS -->
-    <script src="https://cdn.jsdelivr.net/gh/casmar76/SmartClick/smart_click.js" data-origin-url="https://pixel.insulinet.site"></script>
     <script src="https://cdn.gateraads.com/code/8300-7074b9ed-cecf-4b48-b131-6d5e81cb02f3"></script>
     
     <!-- SEO ESSENTIALS & PERFORMANCE -->
@@ -213,26 +212,11 @@
         </header>
 
         <!-- Hero Image Section (Health/Supplement Theme) -->
-        <section class="relative w-full h-[400px] md:h-[500px] lg:h-[600px] bg-gray-100 overflow-hidden group">
-            <!-- Carousel Container -->
-            <div id="hero-slider" class="absolute inset-0 w-full h-full">
-                <!-- Main Hero Image -->
-                <img src="images/ozalyn.png" class="hero-slide absolute inset-0 w-full h-full object-cover object-center opacity-100 transition-opacity duration-1000 ease-in-out" alt="Ozalyn Product">
-                
-                <!-- Other slides (kept as placeholders or can be removed if you only want static image) -->
-                <img src="https://placehold.co/1200x800/e2e8f0/334155?text=Healthy+Digestion" class="hero-slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000 ease-in-out" alt="Healthy Lifestyle">
-                <img src="https://placehold.co/1200x800/dbeafe/1e40af?text=Metabolic+Harmony" class="hero-slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000 ease-in-out" alt="Woman drinking water">
-                <img src="https://placehold.co/1200x800/f0f9ff/0369a1?text=Natural+Ingredients" class="hero-slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000 ease-in-out" alt="Natural Ingredients">
-            </div>
+        <section class="relative w-full h-[250px] sm:h-[350px] md:h-[450px] bg-gray-100 overflow-hidden">
+            <!-- Single Static Hero Image -->
+            <img src="images/ozalyn.png" class="absolute inset-0 w-full h-full object-cover object-center" alt="Ozalyn Product">
             
-            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10 z-10 pointer-events-none"></div>
-            <div class="absolute inset-0 container mx-auto px-4 pointer-events-none z-20">
-                <div class="relative w-full h-full">
-                    <div class="absolute top-6 left-0 right-0 z-10 md:top-12 md:left-4">
-                        <!-- Empty Hero Title Area -->
-                    </div>
-                </div>
-            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10 pointer-events-none"></div>
         </section>
 
         <!-- Content Section -->
@@ -696,28 +680,6 @@
             document.getElementById('landing-page').style.display = 'block';
             window.scrollTo(0, 0); // Reset scroll to top when returning
         }
-
-        // --- Hero Carousel Script ---
-        document.addEventListener('DOMContentLoaded', function() {
-            const slides = document.querySelectorAll('.hero-slide');
-            let currentSlide = 0;
-            const slideInterval = 3000; // 3 seconds
-
-            if (slides.length > 0) {
-                setInterval(() => {
-                    // Fade out current slide
-                    slides[currentSlide].classList.remove('opacity-100');
-                    slides[currentSlide].classList.add('opacity-0');
-
-                    // Calculate next slide index
-                    currentSlide = (currentSlide + 1) % slides.length;
-
-                    // Fade in next slide
-                    slides[currentSlide].classList.remove('opacity-0');
-                    slides[currentSlide].classList.add('opacity-100');
-                }, slideInterval);
-            }
-        });
     </script>
 </body>
 </html>
